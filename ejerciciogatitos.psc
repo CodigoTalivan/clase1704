@@ -5,10 +5,10 @@ Algoritmo gatitos
 	minino <- 0
 	adulto <- 0
 	senior <- 0
-	Escribir '¿Cuantos gatos hay en su refugio?'
+	Escribir 'Â¿Cuantos gatos hay en su refugio?'
 	Leer cantidad
 	Mientras cantidad<>0 Hacer
-		Escribir '¿Cual es la edad del gatito numero ', orden, ' en meses?'
+		Escribir 'Â¿Cual es la edad del gatito numero ', orden, ' en meses?'
 		Leer edad
 		//Restringiendo la edad para que el usuario no de un valor mas alto que 48 ni un numero negativo
 		Si edad>-1 Y edad<49 Entonces
@@ -16,7 +16,7 @@ Algoritmo gatitos
 			orden <- orden+1
 			//Usando el verdadero y falso 2 veces para que haya mas posilibidades de resultados
 			Si edad>6 Entonces
-				Si edad>24 Entonces
+				Si edad>=25 Entonces
 					Escribir 'Este gatito es senior'
 					senior <- senior+1
 				SiNo
